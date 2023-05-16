@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="21dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/media_cat"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </ImageView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_text"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="19dp"
+            app:layout_constraintStart_toStartOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintBottom_toBottomOf="@+id/image">
+
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Header"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/sub_header"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Sample text, sample text, sample text, sample text"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
